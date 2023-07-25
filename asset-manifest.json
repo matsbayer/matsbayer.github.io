@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/matsbayer.github.io/static/css/main.073c9b0a.css",
+    "main.js": "/matsbayer.github.io/static/js/main.2a84a10a.js",
+    "static/js/787.1ed0c42c.chunk.js": "/matsbayer.github.io/static/js/787.1ed0c42c.chunk.js",
+    "static/media/logo.svg": "/matsbayer.github.io/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/matsbayer.github.io/index.html",
+    "main.073c9b0a.css.map": "/matsbayer.github.io/static/css/main.073c9b0a.css.map",
+    "main.2a84a10a.js.map": "/matsbayer.github.io/static/js/main.2a84a10a.js.map",
+    "787.1ed0c42c.chunk.js.map": "/matsbayer.github.io/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.2a84a10a.js"
+  ]
+}
