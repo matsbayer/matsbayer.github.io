@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import {useTranslation} from "react-i18next";
+import NavBar from "./components/NavBar";
 
 function App() {
+
+  const { i18n, t } = useTranslation()
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <NavBar />
+
+        <div className="scroll-container">
+            <section className="scroll-page" id="home">1</section>
+            <section className="scroll-page" id="about">2</section>
+            <section className="scroll-page" id="work">3</section>
+            <section className="scroll-page" id="contact">4</section>
+        </div>
+
     </div>
   );
 }
