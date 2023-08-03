@@ -1,0 +1,21 @@
+.scroll-container {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    height: 100vh;
+    overflow-y: visible;
+    scroll-snap-type: y mandatory;
+    scroll-snap-stop: normal;
+    scroll-snap-align: center;
+}
+
+.scroll-page {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    font-size: 5em;
+    box-shadow: 1px 1px greenyellow;
+    scroll-snap-type: y mandatory;
+    scroll-snap-stop: normal;
+    scroll-snap-align: center;
+}

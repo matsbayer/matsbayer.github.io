@@ -1,11 +1,10 @@
 .navbar {
-    background-color: rgba(40, 40, 40, 0.90);
+    background-color: rgba(40, 40, 40, 0.75);
     top: 0;
     padding: 0.5rem 0 0.5rem 0rem;
     position: fixed;
+    z-index: 99;
     width: 100%;
-    overflow: hidden;
-
 }
 
 .link-container {
@@ -15,10 +14,10 @@
     justify-content: right;
     gap: 5rem;
     margin-right: 8rem;
-
 }
 
 .link-container a {
     color: #f5f5f5;
-    scroll-behavior: smooth ;
+    text-decoration: none;
+
 }
