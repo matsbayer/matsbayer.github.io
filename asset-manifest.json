@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/matsbayer.github.io/static/css/main.c2a78cc5.css",
-    "main.js": "/matsbayer.github.io/static/js/main.6a42d818.js",
+    "main.css": "/matsbayer.github.io/static/css/main.dde18157.css",
+    "main.js": "/matsbayer.github.io/static/js/main.bf4e35ec.js",
     "static/js/787.1ed0c42c.chunk.js": "/matsbayer.github.io/static/js/787.1ed0c42c.chunk.js",
+    "static/media/me.png": "/matsbayer.github.io/static/media/me.3d7b774ed6d5a29dba5c.png",
     "index.html": "/matsbayer.github.io/index.html",
-    "main.c2a78cc5.css.map": "/matsbayer.github.io/static/css/main.c2a78cc5.css.map",
-    "main.6a42d818.js.map": "/matsbayer.github.io/static/js/main.6a42d818.js.map",
+    "main.dde18157.css.map": "/matsbayer.github.io/static/css/main.dde18157.css.map",
+    "main.bf4e35ec.js.map": "/matsbayer.github.io/static/js/main.bf4e35ec.js.map",
     "787.1ed0c42c.chunk.js.map": "/matsbayer.github.io/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c2a78cc5.css",
-    "static/js/main.6a42d818.js"
+    "static/css/main.dde18157.css",
+    "static/js/main.bf4e35ec.js"
   ]
 }
