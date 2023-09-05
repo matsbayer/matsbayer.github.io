@@ -4,9 +4,13 @@
 
 html {
     scroll-behavior: smooth;
-    background-color: #282828;
+
+}
+
+body {
+    overflow-x: hidden;
+    background: linear-gradient(to left, #282828, #3b3b3b, #282828 100%);
 }
 
 .App {
-
 }

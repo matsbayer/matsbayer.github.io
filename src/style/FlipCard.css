@@ -5,6 +5,7 @@
     perspective: 1000px;
     border-radius: 10rem;
     margin-left: -10rem;
+
 }
 
 .flip-card-inner {
@@ -35,6 +36,7 @@
 
 .flip-card-back {
     background-color: #9985d5;
+    background-size: cover  ;
     color: white;
     transform: rotateY(180deg);
     font-size: x-small;

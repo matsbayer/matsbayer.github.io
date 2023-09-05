@@ -1,12 +1,14 @@
-
+import "../style/Contact.css"
 
 function Contact() {
 
 
     return (
-        <>
-            In progress...
-        </>
+        <div className="contact-container">
+            <p>
+                Test
+            </p>
+        </div>
     )
 }
 

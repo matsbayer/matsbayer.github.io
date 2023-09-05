@@ -1,0 +1,23 @@
+.experience-container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience-one {
+    width: 50%;
+    float: left;
+    padding-left: 5rem;
+    text-align: left;
+}
+
+.experience-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    float: right;
+}

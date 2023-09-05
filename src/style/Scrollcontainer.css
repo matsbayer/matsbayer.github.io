@@ -1,21 +1,44 @@
 .scroll-container {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
     height: 100vh;
     overflow-y: visible;
     scroll-snap-type: y mandatory;
     scroll-snap-stop: normal;
-    scroll-snap-align: center;
 }
 
 .scroll-page {
+    box-shadow: 1px 1px transparent;
+}
+
+.pagefullcanvas {
+    height: 100vh;
     display: flex;
     justify-content: center;
-    height: 100%;
-    font-size: 5em;
-    box-shadow: 1px 1px greenyellow;
-    scroll-snap-type: y mandatory;
-    scroll-snap-stop: normal;
-    scroll-snap-align: center;
+    align-items: center;
+}
+
+.canvas {
+
+}
+
+.pagefull {
+    height: 100vh;
+    box-shadow: 1px 1px transparent;
+}
+
+.scroll-page:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../resources/wave2.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.pagefuller {
+    height: 100vh;
+    background-image: url("../resources/neuWaves.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
 }

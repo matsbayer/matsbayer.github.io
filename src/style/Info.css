@@ -1,5 +1,6 @@
 .info-container {
     width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -7,6 +8,7 @@
     overflow: hidden;
     color: whitesmoke;
     font-family: 'Trebuchet MS', sans-serif;
+
 }
 
 .info-me {
@@ -29,4 +31,5 @@
 .author-name {
     color: #9985d5;
     font-size: 4rem;
+    white-space: nowrap;
 }

@@ -1,8 +1,11 @@
 import "../style/Info.css"
 import FlipCard from "./FlipCard";
 import {motion} from "framer-motion";
+import {useTranslation} from "react-i18next";
 
 function Info() {
+//"homepage": "https://matsbayer.github.io/matsbayer.github.io",
+    const {i18n, t} = useTranslation()
 
     return (
         <div className="info-container">
@@ -40,9 +43,9 @@ function Info() {
                     }}
 
                 >
-                    Ich bin
-                    <span whileHover={{scale: 1.2,}} className="author-name"> Mats Bayer </span>
-                    und das bin ich
+                    {t("headline1")}
+                    <span whileHover={{scale: 1.2,}} className="author-name"> {t("name")} </span>
+                    {t("headline2")}
                 </motion.p>
             </div>
             <div className="info-img">

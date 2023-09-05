@@ -15,6 +15,10 @@ i18n.use(initReactI18next).init({
                 about: "About",
                 work: "Experience",
                 contact: "Contact",
+                headline1: "I'm ",
+                name: "Mats Bayer",
+                headline2: "and what's poppin?",
+
             },
         },
         de: {
@@ -24,6 +28,10 @@ i18n.use(initReactI18next).init({
                 about: "Über mich",
                 work: "Erfahrung",
                 contact: "Kontakt",
+                headline1: "Ich bin",
+                name: "Mats Bayer",
+                headline2: "und was geht?",
+
             },
         },
     },

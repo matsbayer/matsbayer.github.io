@@ -2,11 +2,16 @@ import './App.css';
 import {useTranslation} from "react-i18next";
 import NavBar from "./components/NavBar";
 import Scrollcontainer from "./components/Scrollcontainer";
-import {motion} from "framer-motion";
-import Card from "./components/Card"
 import Info from "./components/Info";
-import About from "./components/About";
 import Contact from "./components/Contact";
+import {Canvas} from "@react-three/fiber";
+import {CameraControls, Center, PerspectiveCamera, PresentationControls} from "@react-three/drei";
+import {Suspense} from 'react'
+
+import Experience from "./components/Experience";
+import Monitor from "./components/Monitor";
+
+
 
 function App() {
 
@@ -16,51 +21,31 @@ function App() {
         <div className="App">
             <NavBar/>
             <Scrollcontainer>
-                <section className="scroll-page" id="home">
+                <section className="scroll-page" id="home" >
                     <Info />
                 </section>
 
-                <section className="scroll-page" id="about">
-                    <About />
+                <section className="scroll-page pagefullcanvas" id="about" >
+                    <Canvas camera={{fov: 75, position: [2, 1, 5]}} className="canvas" style={{width: 500, backgroundColor: "#282828", height: 500}}>
+                        <Suspense fallback={null}>
+                        <ambientLight intensity={0.1} />
+                        <directionalLight color="white" position={[0, 0, 6]} />
+                            <CameraControls enabled={true} />
+                                <Monitor />
+
+                        </Suspense>
+                    </Canvas>
                 </section>
 
-                <section
-                    initial={{
-                        y: 0,
-                    }}
-                    whileInView={{
-                        y: 0,
-                    }}
-                    transition={{
-                        ease: "easeOut",
-                        duration: 2,
-                    }}
+                <section className="pagefull" id="work" >
 
-                    className="scroll-page" id="work">
-                    <Card
-                        heading="AI"
-                        image="https://img.icons8.com/?size=512&id=61864&format=png"
-                        text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                         sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-                         sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum."
-                    />
-                    <Card
-                        heading="Development"
-                        image="https://img.icons8.com/?size=512&id=2778&format=png"
-                        text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                         sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-                         sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum."
-                    />
-                    <Card
-                        heading="Creativity"
-                        image="https://img.icons8.com/?size=512&id=21908&format=png"
-                        text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                         sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-                         sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. "
-                    />
+                    <div>
+                        <Experience />
+                    </div>
+
                 </section>
 
-                <section className="scroll-page" id="contact">
+                <section className="pagefuller" id="contact" >
                     <Contact />
                 </section>
 
