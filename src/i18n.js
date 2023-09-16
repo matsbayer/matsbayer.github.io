@@ -10,28 +10,22 @@ i18n.use(initReactI18next).init({
     resources: {
         en: {
             translation: {
-                title: "Portfolio of me",
                 home: "Home",
-                about: "About",
-                work: "Experience",
-                contact: "Contact",
-                headline1: "I'm ",
+                skills: "Skills",
+                projects: "Projects",
+                greeting: "Hello, I´m",
                 name: "Mats Bayer",
-                headline2: "and what's poppin?",
-
+                shortIntro: "Currently studying computer science and media (B. Sc.) at Hochschule der Medien in Stuttgart and enthusiastic about technology and software, both conceptually and its concrete implementation.",
             },
         },
         de: {
             translation: {
-                title: "Mein Portfolio",
                 home: "Home",
-                about: "Über mich",
-                work: "Erfahrung",
-                contact: "Kontakt",
-                headline1: "Ich bin",
+                skills: "Skills",
+                projects: "Projekte",
+                greeting: "Hallo, ich bin",
                 name: "Mats Bayer",
-                headline2: "und was geht?",
-
+                shortIntro: "Studiere derzeit Medieninformatik (B. Sc.) an der Hochschule der Medien in Stuttgart und begeistere mich für Technik und Software, sowohl konzeptionell als auch in dessen konkreter Implementation",
             },
         },
     },

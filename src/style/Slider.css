@@ -54,5 +54,27 @@
     user-select: none;
 }
 
+@media screen and (max-width: 600px) {
+    .next,
+    .prev {
+        width: 24px;
+        height: 24px;
+        font-size: 12px;
+        display: none;
+    }
+    .next {
+        margin-right: 18rem;
+    }
+    .prev {
+        margin-left: 18rem;
+    }
+    .listdots {
+        margin-top: 25rem;
+    }
+    .listdots div {
+        width: 12px;
+        height: 12px;
+    }
+}
 
 
