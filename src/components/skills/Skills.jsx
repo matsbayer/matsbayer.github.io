@@ -1,4 +1,15 @@
 import "./Skills.css"
+import Circle from "./Circle";
+
+const data_skills = [
+    {name: "HTML", progress: "90"},
+    {name: "CSS", progress: "85"},
+    {name: "JavaScript", progress: "80"},
+    {name: "React.js", progress: "75"},
+    {name: "Python", progress: "65"},
+    {name: "Java", progress: "60"},
+    {name: "Design Patterns", progress: "45"}
+]
 
 function Skills() {
 
@@ -8,34 +19,18 @@ function Skills() {
                 Skills
             </h2>
             <p>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                These are some example values! Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
             </p>
             <ul className="circles">
 
-                <div className="circle-item">
-                    <img src={require("../../resources/circle.png")} alt="circle" />
-                    <p>HTML</p>
-                </div>
-                <div className="circle-item">
-                    <img src={require("../../resources/circle.png")} alt="circle" />
-                    <p>CSS</p>
-                </div>
-                <div className="circle-item">
-                    <img src={require("../../resources/circle.png")} alt="circle" />
-                    <p>JavaScript</p>
-                </div>
-                <div className="circle-item">
-                    <img src={require("../../resources/circle.png")} alt="circle" />
-                    <p>React.js</p>
-                </div>
-                <div className="circle-item">
-                    <img src={require("../../resources/circle.png")} alt="circle" />
-                    <p>Python</p>
-                </div>
-                <div className="circle-item">
-                    <img src={require("../../resources/circle.png")} alt="circle" />
-                    <p>Java</p>
-                </div>
+                {
+                    data_skills.map((elem) => {
+                        return (
+                            <Circle name={elem.name} progress={elem.progress}  />
+                            )
+
+                    })
+                }
 
             </ul>
         </div>
