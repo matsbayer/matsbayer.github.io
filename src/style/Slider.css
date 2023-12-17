@@ -1,0 +1,80 @@
+.next,
+.prev {
+    position: absolute;
+    background-color: #9985d5;
+    border-radius: 30px;
+    border: hidden;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.next {
+    margin-right: 24rem;
+}
+
+.prev {
+    margin-left: 24rem;
+}
+
+.image-slider {
+    position: absolute;
+
+}
+
+.listdots {
+    position: absolute;
+    margin-top: 34rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    gap: 0.5rem;
+}
+
+.active {
+    background-color: #d9d9d9 !important;
+}
+
+.listdots div {
+    background-color: rgba(215, 215, 215, 0.3);
+    border-radius: 30px;
+    border: hidden;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    user-select: none;
+}
+
+@media screen and (max-width: 600px) {
+    .next,
+    .prev {
+        width: 24px;
+        height: 24px;
+        font-size: 12px;
+        display: none;
+    }
+    .next {
+        margin-right: 18rem;
+    }
+    .prev {
+        margin-left: 18rem;
+    }
+    .listdots {
+        margin-top: 25rem;
+    }
+    .listdots div {
+        width: 12px;
+        height: 12px;
+    }
+}
+
+
