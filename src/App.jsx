@@ -17,8 +17,8 @@ function App() {
         <div className="w-full h-full text-6xl lg:text-7xl xl:text-8xl flex flex-col items-center justify-center gap-4 lg:gap-8">
           <p className="text-primary-400 font-leagueSpartan font-bold">Software<br />Developer</p>
             <div className="flex flex-row items-center justify-center gap-6">
-              <img src="/github.svg" className="w-12 h-12 lg:(w-16 h-16)"></img>
-              <img src="/linkedin.svg" className="w-12 h-12 lg:(w-16 h-16)"></img>
+              <img src="/github.svg" href="https://github.com/matsbayer" className="w-12 h-12 lg:(w-16 h-16)"></img>
+              <img src="/linkedin.svg" href="https://www.linkedin.com/in/mats-bayer/" className="w-12 h-12 lg:(w-16 h-16)"></img>
             </div>
         </div>  
       </div>
